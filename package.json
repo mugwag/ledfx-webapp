@@ -1,7 +1,6 @@
 {
   "name": "ledfx-webapp",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,5 +14,11 @@
   "bugs": {
     "url": "https://github.com/mugwag/ledfx-webapp/issues"
   },
-  "homepage": "https://github.com/mugwag/ledfx-webapp#readme"
+  "homepage": "https://github.com/mugwag/ledfx-webapp#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "gzippo": "^0.2.0"
+  },
+  "devDependencies": {},
+  "description": ""
 }
