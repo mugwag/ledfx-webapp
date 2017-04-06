@@ -2,7 +2,7 @@
   "name": "ledfx-webapp",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
+  "main": "app.js",
   "dependencies": {},
   "devDependencies": {},
   "scripts": {
