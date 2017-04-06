@@ -1,7 +1,6 @@
 {
   "name": "ledfx-webapp",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "dependencies": {},
   "devDependencies": {},
@@ -17,5 +16,6 @@
   "bugs": {
     "url": "https://github.com/mugwag/ledfx-webapp/issues"
   },
-  "homepage": "https://github.com/mugwag/ledfx-webapp#readme"
+  "homepage": "https://github.com/mugwag/ledfx-webapp#readme",
+  "description": ""
 }
