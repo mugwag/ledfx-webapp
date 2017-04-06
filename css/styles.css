@@ -1,0 +1,88 @@
+.eventTiles .card-image{
+  max-height: 150px;
+  overflow: hidden;
+}
+
+.imageTiles .card-image{
+  /*max-height: 150px;*/
+  overflow: hidden;
+}
+
+.card-image img{
+  min-height: 100px;
+}
+
+.padding{
+padding:0px 5px;
+}
+
+
+.navbar-fixed{
+    height: 72px;
+  }
+
+  .card .card-content .card-title, .card .card-reveal .card-title  {
+    line-height: 30px;
+    padding-bottom: 10px;
+    display: block;
+  }
+
+  .activator{
+    cursor:pointer;
+  }
+
+  .page-title{
+    padding:10px;
+  }
+
+  .newsTiles .card, .eventTiles .card, .imageTiles .card, .postTiles .card{
+    min-height: 200px;
+  }
+
+
+
+.linkCollection i {
+  font-size: 60px;
+}
+
+.linkCollection a:hover{
+  cursor: pointer;
+}
+
+.actLink img{
+  float: left;
+  margin: 0 8px 0 -12px;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+}
+
+.parallax-container{
+  height:400px;
+}
+
+.parallax img{
+  width:100%;
+  height:auto;
+}
+
+.card.category .card-image{
+  max-height: 200px;
+  overflow: hidden;
+}
+
+.card.category .card-image .card-title{
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.card.product .card-image{
+  height: 150px;
+  overflow: hidden;
+}
+
+.card.product .card-title{
+  font-size: 20px;
+  font-weight: normal;;
+  color: #333;
+}

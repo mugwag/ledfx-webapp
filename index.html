@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="StarterApp">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>LedFX.pl</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="bower_components/materialize/dist/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/styles.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body class="grey darken-3 white-text" ng-controller="FrontController">
+  <nav class="grey darken-3" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo white-text">LedFX</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="btn waves-effect waves-light cyan accent-2 grey-text text-darken-4" href="#modal1">Call us now</a></li>
+      </ul>
+
+      <!-- Modal Structure -->
+      <div id="modal1" class="modal grey-text text-darken-3">
+        <div class="modal-content">
+          <h4>Call us now!</h4>
+          <p>+48 1234 567 890</p>
+          <p>Check us out</p>
+        </div>
+        <div class="modal-footer grey darken-3">
+          <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat left white-text">Cancel</a>
+          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat cyan accent-2 grey-text text-darken-4">Email</a>
+        </div>
+      </div>
+
+      <!-- <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul> -->
+      <!-- <a class="btn waves-effect waves-light cyan accent-2 grey-text text-darken-4" href="#modal1">INVEST</a> -->
+      <a class="button-collapse" href="#modal1"><i class="material-icons cyan-text text-accent-2">menu</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+
+        <h4 class="header center heavy"><img src="img/ledfx_logo_no_text.png"/><br>Lighting hire, design, installation & more</h4>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="http://admin.ledfx:8888/uploads/{{homepage_image_url}}" alt="LedFX Installs"></div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!-- categories -->
+      <div id="cat" class="row">
+        <div class="fixed-action-btn" tyle="bottom: 45px; right: 24px;">
+            <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+        </div>
+
+        <div class="col s12 m12 l6" ng-repeat="cat in data.data.categories">
+
+            <div class="card category">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="http://admin.ledfx:8888/uploads/{{cat.image_url}}">
+                  <span class="card-title">{{cat.name}}</span>
+                </div>
+              </div>
+
+          </div>
+
+        <div>
+          <div class="eventTiles" ng-repeat="data in data">
+          <div class="row">
+              <div class="section padding">
+                <div class="padding col s12 m6 l4" ng-repeat="event in act.event">
+                    <div class="card hoverable">
+                      <div class="card-image">
+                        <img class="activator" src="img/sample-1.jpg">
+                        <span class="card-title">
+                          <time class="date day col-sm-2">{{event.event_date | day }}</time>
+                          <time class="date month col-sm-2">{{event.event_date | month }}</time></span>
+
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                        <p>I am a very simple card. I am good at containing small bits of information.
+                        I am convenient because I require little markup to use effectively.</p>
+                      </div>
+                      <div class="card-action">
+                        <a href="#">This is a link</a>
+                      </div>
+                      <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                      </div>
+
+                    </div>
+                </div>
+              </div></div>
+            </div>
+          </div>
+    </div> <!-- EO cats !-->
+
+    <div class="row">
+
+        <div class="col s6 m4 l3" ng-repeat="prod in data.data.products">
+
+            <div class="card product">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="http://admin.ledfx:8888/uploads/{{prod.image_url}}">
+
+                </div>
+
+                <div class="card-content">
+                  <span class="card-title">{{prod.name}}</span>
+                </div>
+
+              </div>
+
+
+          </div>
+
+    </div>
+
+
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper" style="min-height: 300px;">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <!-- <h4 class="header col s12 dark grey-text text-darken-4">"the best thing since equity crowdfunding"</h4> -->
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="background7.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Contact Us</h4>
+          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 cyan-text text-accent-2">Still not convinced?</h5>
+        </div>
+        <div class="row center">
+          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light cyan accent-2 grey-text text-darken-4">Try Free Demo</a>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="background6.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <footer class="page-footer cyan accent-2">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="grey-text text-darken-4">Company Bio</h5>
+          <p class="grey-text text-darken-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="grey-text text-darken-4">Settings</h5>
+          <ul>
+            <li><a class="grey-text text-darken-4" href="#!">Link 1</a></li>
+            <li><a class="grey-text text-darken-4" href="#!">Link 2</a></li>
+            <li><a class="grey-text text-darken-4" href="#!">Link 3</a></li>
+            <li><a class="grey-text text-darken-4" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="grey-text text-darken-4">Connect</h5>
+          <ul>
+            <li><a class="grey-text text-darken-4" href="#!">Link 1</a></li>
+            <li><a class="grey-text text-darken-4" href="#!">Link 2</a></li>
+            <li><a class="grey-text text-darken-4" href="#!">Link 3</a></li>
+            <li><a class="grey-text text-darken-4" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="bower_components/materialize/dist/js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  <script src="/bower_components/angular/angular.js"></script>
+  <!-- <script src="/bower_components/angular-aria/angular-aria.js"></script>
+  <script src="/bower_components/angular-animate/angular-animate.js"></script>
+  <script src="/bower_components/angular-material/angular-material.js"></script> -->
+  <script src="/bower_components/angular-material-icons/angular-material-icons.js"></script>
+  <script src="/bower_components/ng-lodash/build/ng-lodash.js"></script>
+
+  <script src="app.js"></script>
+  <script src="adminController.js"></script>
+  <script src="FrontController.js"></script>
+  <script src="materialControls.js"></script>
+
+  <script>
+  $(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal(
+      {
+      dismissible: true, // Modal can be dismissed by clicking outside of the modal
+      opacity: .5, // Opacity of modal background
+      in_duration: 300, // Transition in duration
+      out_duration: 200, // Transition out duration
+      starting_top: '4%', // Starting top style attribute
+      ending_top: '20%' // Ending top style attribute
+      // ready: function(modal, trigger) { // Callback for Modal open. Modal and trigger parameters available.
+      //   alert("Ready");
+      //   console.log(modal, trigger);
+      // },
+      // complete: function() { alert('Closed'); } // Callback for Modal close
+    }
+    );
+  });
+
+  </script>
+
+  </body>
+</html>
