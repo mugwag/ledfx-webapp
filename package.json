@@ -1,0 +1,19 @@
+{
+  "name": "ledfx-webapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mugwag/ledfx-webapp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mugwag/ledfx-webapp/issues"
+  },
+  "homepage": "https://github.com/mugwag/ledfx-webapp#readme"
+}
